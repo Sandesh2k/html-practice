@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" required minlength="2" maxlength="50"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required><br>
+
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password" required minlength="12" maxlength="30"><br>
+
+        <label for="mob">Phone: </label>
+        <input type="tel" name="mob" id="mob" required pattern="[0-9]{10}"><br><br>
+
+        <label for="date">Date of Birth: </label>
+        <input type="date" name="date" id="date"><br><br>
+
+        <label for="file">Upload file: </label>
+        <input type="file" name="file" id="file"><br><br>
+
+        <label >Course: </label><br>
+        <input type="checkbox" id="c1" name="course" value="ReactJS">
+        <label for="c1">ReactJS</label><br>
+        <input type="checkbox" id="c2" name="course" value="NextJS">
+        <label for="c2">NextJS</label><br><br>
+
+
+        <label >Gender:</label>
+        <input type="radio" id="male" name="gender" > 
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="other">
+        <label for="other">Other</label><br>
+
+        <label for="degree">Degree: </label>
+        <select name="degree" id="degree" >
+            <option >Select Degree</option>
+            <optgroup label="Bachelors">
+                <option value="be">BE</option>
+                <option value="bsc">BSC</option>
+                <option value="bcom">BCom</option>
+                <option value="btech">BTech</option>
+            </optgroup>
+            <optgroup label="Masters">
+                <option value="Me">ME</option>
+                <option value="Msc">MSC</option>
+                <option value="Mcom">MCom</option>
+                <option value="Mtech">MTech</option>
+                <option value="MBA">MBA</option>
+            </optgroup>
+        </select><br><br>
+
+        <label for="desc">Description:</label>
+        <textarea name="desc" id="desc" rows="1" cols="50"></textarea><br>
+
+        <label for="exp">Experience(In years): </label>
+        <input type="range" name="experience" id="exp" min="0" max="20" value="0" oninput="exnum.value = this.value">
+        <output id="exnum">0</output><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
